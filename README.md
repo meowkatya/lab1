@@ -68,3 +68,34 @@ print(classification_report(test_y, LRyhat, target_names=target_names))
 ```
 
 # Результат вывода программы
+```
+SVC model
+                    precision    recall  f1-score   support
+
+           Walking       0.94      0.98      0.96       496
+  Walking Upstairs       0.93      0.96      0.94       471
+Walking Downstairs       0.99      0.91      0.95       420
+           Sitting       0.94      0.89      0.91       491
+          Standing       0.91      0.95      0.93       532
+            Laying       1.00      1.00      1.00       537
+
+          accuracy                           0.95      2947
+         macro avg       0.95      0.95      0.95      2947
+      weighted avg       0.95      0.95      0.95      2947
+
+LogisticRegression model
+                    precision    recall  f1-score   support
+
+           Walking       0.95      0.99      0.97       496
+  Walking Upstairs       0.96      0.94      0.95       471
+Walking Downstairs       0.99      0.96      0.97       420
+           Sitting       0.96      0.88      0.92       491
+          Standing       0.90      0.97      0.93       532
+            Laying       1.00      1.00      1.00       537
+
+          accuracy                           0.96      2947
+         macro avg       0.96      0.96      0.96      2947
+      weighted avg       0.96      0.96      0.96      2947
+```
+# Вывод
+Исходя из столбца f1-score можно сделать вывод, что наиболее эффективная модель - модель LogisticRegression.
